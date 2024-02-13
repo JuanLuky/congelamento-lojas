@@ -115,7 +115,7 @@ div>button:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 4.5px;
+    gap: 5.5px;
 }
 
   .checkbox-wrapper-47 input[type="checkbox"] {

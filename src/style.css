@@ -105,14 +105,17 @@ div>button:hover {
     align-items: center;
     justify-content: space-between;
 }
-.data li{
-    font-size: 19px;
+.data>li{
+    font-size: 18px;
+    margin: 17px 0;
+    border: none;
+    padding: 0;
 }
 .checkbox_content {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 9px;
+    gap: 4.5px;
 }
 
   .checkbox-wrapper-47 input[type="checkbox"] {

@@ -283,6 +283,7 @@ export function Home() {
               <li>{obterDataAtual()}</li>
               <li>{obterDataAtual()}</li>
               <li>{obterDataAtual()}</li>
+              <li>{obterDataAtual()}</li>
             </ul>
 
             <ul className="checkbox_content">
@@ -334,6 +335,11 @@ export function Home() {
               <div className="checkbox-wrapper-47">
                 <input type="checkbox" name="cb" id="cb-10" />
                 <label htmlFor="cb-10">Congelada</label>
+              </div>
+
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-11" />
+                <label htmlFor="cb-11">Congelada</label>
               </div>
 
 

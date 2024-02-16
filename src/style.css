@@ -53,6 +53,12 @@ main {
     max-width: 1140px;
     height: 90vh;
 }
+.lojas20_00 {
+    height: 50vh;
+}
+.lojas21_00 {
+    height: 42vh;
+}
 main nav {
     display: flex;
     align-items: center;

@@ -351,6 +351,194 @@ export function Home() {
           </p>
         </main>
 
+        <main className="lojas20_00">
+          <nav>
+            <h1 className="title">
+            CAMINO E CARONE{" "}
+              <span style={{ color: "#7a49e5", fontSize: "56px" }}>20h:00</span>{" "}
+              <span style={{ color: "#7a49e5", fontSize: "16px" }}>
+                SEG-SEX
+              </span>
+            </h1>
+
+            <div className="nav-right">
+              <h3></h3>
+              <h3></h3>
+            </div>
+          </nav>
+
+          <p className="subTitle">
+            Importação de Cadastro e Preços GMCORE (Carga total antes da
+            Parcial)
+          </p>
+
+          <div className="filiais">
+            <ul>
+              <li style={{ color: "yellow" }}>CARGA TOTAL : </li>
+              <li>LINHA 1</li>
+              <li>LINHA 2</li>
+              <li>LINHA 3</li>
+              <li>LINHA 4</li>
+            </ul>
+
+            <ul>
+              <div>
+                <div
+                  className="filial"
+                  ref={divRef}
+                  style={{ color: "yellow" }}
+                >
+                  302, 408
+                </div>
+                <button onClick={copyToClipboard}>
+                  <IoMdCopy />
+                </button>
+              </div>
+
+              <div>
+                <div className="filial" ref={divRef1}>
+                  300, 302, 303, 305, 59, 63, 64, 188, 194, 198, 199, 604
+                </div>
+                <button onClick={copyToClipboard1}>
+                  <IoMdCopy />
+                </button>
+              </div>
+
+              <div>
+                <div className="filial" ref={divRef2}>
+                  400, 408, 409, 410, 411, 412, 415, 418, 424
+                </div>
+                <button onClick={copyToClipboard2}>
+                  <IoMdCopy />
+                </button>
+              </div>
+
+              <div>
+                <div className="filial" ref={divRef3}>
+                  427, 428, 429, 431, 433, 434, 435, 436{" "}
+                </div>
+                <button onClick={copyToClipboard3}>
+                  <IoMdCopy />
+                </button>
+              </div>
+
+              <div>
+                <div className="filial" ref={divRef4}>
+                  437, 439, 446, 447, 450, 451, 452, 453, 454, 459
+                </div>
+                <button onClick={copyToClipboard4}>
+                  <IoMdCopy />
+                </button>
+              </div>
+            </ul>
+
+            <ul className="data">
+              <li>{obterDataAtual()}</li>
+              <li>{obterDataAtual()}</li>
+              <li>{obterDataAtual()}</li>
+              <li>{obterDataAtual()}</li>
+              <li>{obterDataAtual()}</li>
+           
+            </ul>
+
+            <ul className="checkbox_content">
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-1" />
+                <label htmlFor="cb-1">Congelada</label>
+              </div>
+
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-2" />
+                <label htmlFor="cb-2">Congelada</label>
+              </div>
+
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-3" />
+                <label htmlFor="cb-3">Congelada</label>
+              </div>
+
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-4" />
+                <label htmlFor="cb-4">Congelada</label>
+              </div>
+
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-5" />
+                <label htmlFor="cb-5">Congelada</label>
+              </div>
+
+            </ul>
+          </div>
+        </main>
+
+        <main className="lojas21_00">
+          <nav>
+            <h1 className="title">
+            CAMINO E CARONE{" "}
+              <span style={{ color: "#7a49e5", fontSize: "56px" }}>21h:00</span>{" "}
+              <span style={{ color: "#7a49e5", fontSize: "16px" }}>
+                SEG-SEX
+              </span>
+            </h1>
+
+            <div className="nav-right">
+              <h3></h3>
+              <h3></h3>
+            </div>
+          </nav>
+
+          <div className="filiais">
+            <ul>
+              <li>LINHA 5</li>
+              <li>LINHA 6</li>
+            </ul>
+
+            <ul>
+
+              <div>
+                <div className="filial" ref={divRef}>
+                  301, 414, 423, 425, 432, 438, 445
+                </div>
+                <button onClick={copyToClipboard1}>
+                  <IoMdCopy />
+                </button>
+              </div>
+
+              <div>
+                <div className="filial" ref={divRef2}>
+                457, 458, 461, 463, 464, 467
+                </div>
+                <button onClick={copyToClipboard2}>
+                  <IoMdCopy />
+                </button>
+              </div>
+            </ul>
+
+            <ul className="data">
+              <li>{obterDataAtual()}</li>
+              <li>{obterDataAtual()}</li>
+           
+            </ul>
+
+            <ul className="checkbox_content">
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-4" />
+                <label htmlFor="cb-4">Congelada</label>
+              </div>
+
+              <div className="checkbox-wrapper-47">
+                <input type="checkbox" name="cb" id="cb-5" />
+                <label htmlFor="cb-5">Congelada</label>
+              </div>
+
+            </ul>
+          </div>
+
+          <p style={{ color: "yellow", marginTop: "20px" }}>
+            TODOS OS DIAS FAZER A CONFIG DOS ELETROS APOS OS PROCESSOS.
+          </p>
+        </main>
+
       </div>
     </div>
   );

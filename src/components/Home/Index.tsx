@@ -16,107 +16,6 @@ export function Home() {
   const divRef9 = useRef<HTMLDivElement>(null);
   const divRef10 = useRef<HTMLDivElement>(null);
 
-  const copyToClipboard = () => {
-    const divContent = divRef.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard1 = () => {
-    const divContent1 = divRef1.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent1!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard2 = () => {
-    const divContent2 = divRef2.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent2!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard3 = () => {
-    const divContent3 = divRef3.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent3!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard4 = () => {
-    const divContent4 = divRef4.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent4!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard5 = () => {
-    const divContent5 = divRef5.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent5!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard6 = () => {
-    const divContent6 = divRef6.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent6!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard7 = () => {
-    const divContent7 = divRef7.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent7!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard8 = () => {
-    const divContent8 = divRef8.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent8!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard9 = () => {
-    const divContent9 = divRef9.current?.innerText;
-    navigator.clipboard
-      .writeText(divContent9!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-  const copyToClipboard10 = () => {
-    const divContent10 = divRef10.current?.innerText;
-    navigator.clipboard.writeText(divContent10!)
-      .then(() => alert("Conteúdo copiado para a área de transferência"))
-      .catch((error) =>
-        console.error("Erro ao copiar para a área de transferência: ", error)
-      );
-  };
-
-
-
     const obterDataAtual = () => {
       const data = new Date();
       const dia = ("0" + data.getDate()).slice(-2); // Adiciona zero à frente e pega os últimos 2 caracteres
@@ -175,90 +74,75 @@ export function Home() {
                 >
                   9
                 </div>
-                <button onClick={copyToClipboard}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="9" />
               </div>
 
               <div>
                 <div className="filial" ref={divRef1}>
                   9, 13, 55, 56, 57, 62, 65, 66, 67, 68
                 </div>
-                <button onClick={copyToClipboard1}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="9, 13, 55, 56, 57, 62, 65, 66, 67, 68" />
               </div>
 
               <div>
                 <div className="filial" ref={divRef2}>
                   69, 71, 72, 73, 74, 75, 76, 77, 79, 124
                 </div>
-                <button onClick={copyToClipboard2}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
               </div>
 
               <div>
                 <div className="filial" ref={divRef3}>
                   125, 126, 127, 128, 129, 131, 132, 133, 134, 135{" "}
                 </div>
-                <button onClick={copyToClipboard3}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
               </div>
 
               <div>
                 <div className="filial" ref={divRef4}>
                   137, 138, 139, 140, 142, 143, 144, 145, 146, 149
                 </div>
-                <button onClick={copyToClipboard4}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
               </div>
 
               <div>
                 <div className="filial" ref={divRef5}>
                   150, 151, 152, 153, 154, 156, 157, 158, 160, 161
                 </div>
-                <button onClick={copyToClipboard5}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
+
               </div>
 
               <div>
                 <div className="filial" ref={divRef6}>
                   162, 163, 164, 165, 166, 167, 168, 169, 170, 171
                 </div>
-                <button onClick={copyToClipboard6}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
+
               </div>
 
               <div>
                 <div className="filial" ref={divRef7}>
                   172 ,173, 174, 175, 176, 177, 178, 180, 181, 182
                 </div>
-                <button onClick={copyToClipboard7}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
+
               </div>
 
               <div>
                 <div className="filial" ref={divRef8}>
                   183, 186, 187, 189, 190, 191, 192, 193, 195, 196
                 </div>
-                <button onClick={copyToClipboard8}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
+
               </div>
 
               <div>
                 <div className="filial" ref={divRef9}>
                   197, 601,602, 603, 605, 606, 608, 609, 610, 616
                 </div>
-                <button onClick={copyToClipboard9}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
+
               </div>
 
               <div>
@@ -266,9 +150,7 @@ export function Home() {
                   618, 621, 622, 623, 624, 625, 626, 627, 631, 632, 633, 634,
                   635, 636
                 </div>
-                <button onClick={copyToClipboard10}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="Conteúdo da primeira " />
               </div>
             </ul>
 
@@ -351,7 +233,7 @@ export function Home() {
           </p>
         </main>
 
-        <main className="lojas20_00">
+        {/* <main className="lojas20_00">
           <nav>
             <h1 className="title">
             CAMINO E CARONE{" "}
@@ -537,9 +419,25 @@ export function Home() {
           <p style={{ color: "yellow", marginTop: "20px" }}>
             TODOS OS DIAS FAZER A CONFIG DOS ELETROS APOS OS PROCESSOS.
           </p>
-        </main>
+        </main> */}
 
       </div>
     </div>
   );
 }
+
+const CopyToClipboardButton: React.FC<{ content: string }> = ({ content }) => {
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(content)
+      .then(() => alert('Conteúdo copiado para a área de transferência'))
+      .catch((error) => console.error('Erro ao copiar para a área de transferência: ', error));
+  };
+
+  return (
+      <button onClick={copyToClipboard}>
+        <IoMdCopy />
+      </button>
+  );
+};
+
+export default CopyToClipboardButton;

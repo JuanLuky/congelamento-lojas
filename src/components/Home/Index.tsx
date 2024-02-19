@@ -1,29 +1,16 @@
-import { useRef } from "react";
 import { Header } from "../Header/Index";
 
 import { IoMdCopy } from "react-icons/io";
 
 export function Home() {
-  const divRef = useRef<HTMLDivElement>(null);
-  const divRef1 = useRef<HTMLDivElement>(null);
-  const divRef2 = useRef<HTMLDivElement>(null);
-  const divRef3 = useRef<HTMLDivElement>(null);
-  const divRef4 = useRef<HTMLDivElement>(null);
-  const divRef5 = useRef<HTMLDivElement>(null);
-  const divRef6 = useRef<HTMLDivElement>(null);
-  const divRef7 = useRef<HTMLDivElement>(null);
-  const divRef8 = useRef<HTMLDivElement>(null);
-  const divRef9 = useRef<HTMLDivElement>(null);
-  const divRef10 = useRef<HTMLDivElement>(null);
+  const obterDataAtual = () => {
+    const data = new Date();
+    const dia = ("0" + data.getDate()).slice(-2); // Adiciona zero à frente e pega os últimos 2 caracteres
+    const mes = ("0" + (data.getMonth() + 1)).slice(-2); // Adiciona zero à frente e pega os últimos 2 caracteres
+    const ano = data.getFullYear();
 
-    const obterDataAtual = () => {
-      const data = new Date();
-      const dia = ("0" + data.getDate()).slice(-2); // Adiciona zero à frente e pega os últimos 2 caracteres
-      const mes = ("0" + (data.getMonth() + 1)).slice(-2); // Adiciona zero à frente e pega os últimos 2 caracteres
-      const ano = data.getFullYear();
-  
-      return `${dia}/${mes}/${ano}`;
-    };
+    return `${dia}/${mes}/${ano}`;
+  };
 
   return (
     <div className="Container">
@@ -67,90 +54,84 @@ export function Home() {
 
             <ul>
               <div>
-                <div
-                  className="filial"
-                  ref={divRef}
-                  style={{ color: "yellow" }}
-                >
+                <div className="filial" style={{ color: "yellow" }}>
                   9
                 </div>
                 <CopyToClipboardButton content="9" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef1}>
+                <div className="filial">
                   9, 13, 55, 56, 57, 62, 65, 66, 67, 68
                 </div>
                 <CopyToClipboardButton content="9, 13, 55, 56, 57, 62, 65, 66, 67, 68" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef2}>
+                <div className="filial">
                   69, 71, 72, 73, 74, 75, 76, 77, 79, 124
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
+                <CopyToClipboardButton content="69, 71, 72, 73, 74, 75, 76, 77, 79, 124" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef3}>
+                <div className="filial">
                   125, 126, 127, 128, 129, 131, 132, 133, 134, 135{" "}
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
+                <CopyToClipboardButton content="125, 126, 127, 128, 129, 131, 132, 133, 134, 135" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef4}>
+                <div className="filial">
                   137, 138, 139, 140, 142, 143, 144, 145, 146, 149
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
+                <CopyToClipboardButton content="137, 138, 139, 140, 142, 143, 144, 145, 146, 149" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef5}>
+                <div className="filial">
                   150, 151, 152, 153, 154, 156, 157, 158, 160, 161
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
-
+                <CopyToClipboardButton content="150, 151, 152, 153, 154, 156, 157, 158, 160, 161" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef6}>
+                <div className="filial">
                   162, 163, 164, 165, 166, 167, 168, 169, 170, 171
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
-
+                <CopyToClipboardButton content="162, 163, 164, 165, 166, 167, 168, 169, 170, 171" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef7}>
+                <div className="filial">
                   172 ,173, 174, 175, 176, 177, 178, 180, 181, 182
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
-
+                <CopyToClipboardButton content="172 ,173, 174, 175, 176, 177, 178, 180, 181, 182" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef8}>
+                <div className="filial">
                   183, 186, 187, 189, 190, 191, 192, 193, 195, 196
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
-
+                <CopyToClipboardButton content="183, 186, 187, 189, 190, 191, 192, 193, 195, 196" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef9}>
+                <div className="filial">
                   197, 601,602, 603, 605, 606, 608, 609, 610, 616
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
-
+                <CopyToClipboardButton content="197, 601,602, 603, 605, 606, 608, 609, 610, 616" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef10}>
+                <div className="filial">
                   618, 621, 622, 623, 624, 625, 626, 627, 631, 632, 633, 634,
                   635, 636
                 </div>
-                <CopyToClipboardButton content="Conteúdo da primeira " />
+                <CopyToClipboardButton
+                  content="618, 621, 622, 623, 624, 625, 626, 627, 631, 632, 633, 634,
+                  635, 636"
+                />
               </div>
             </ul>
 
@@ -223,8 +204,6 @@ export function Home() {
                 <input type="checkbox" name="cb" id="cb-11" />
                 <label htmlFor="cb-11">Congelada</label>
               </div>
-
-
             </ul>
           </div>
 
@@ -233,10 +212,10 @@ export function Home() {
           </p>
         </main>
 
-        {/* <main className="lojas20_00">
+        <main className="lojas20_00">
           <nav>
             <h1 className="title">
-            CAMINO E CARONE{" "}
+              CAMINO E CARONE{" "}
               <span style={{ color: "#7a49e5", fontSize: "56px" }}>20h:00</span>{" "}
               <span style={{ color: "#7a49e5", fontSize: "16px" }}>
                 SEG-SEX
@@ -265,52 +244,38 @@ export function Home() {
 
             <ul>
               <div>
-                <div
-                  className="filial"
-                  ref={divRef}
-                  style={{ color: "yellow" }}
-                >
+                <div className="filial" style={{ color: "yellow" }}>
                   302, 408
                 </div>
-                <button onClick={copyToClipboard}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="302, 408" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef1}>
+                <div className="filial">
                   300, 302, 303, 305, 59, 63, 64, 188, 194, 198, 199, 604
                 </div>
-                <button onClick={copyToClipboard1}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="300, 302, 303, 305, 59, 63, 64, 188, 194, 198, 199, 604" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef2}>
+                <div className="filial">
                   400, 408, 409, 410, 411, 412, 415, 418, 424
                 </div>
-                <button onClick={copyToClipboard2}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="400, 408, 409, 410, 411, 412, 415, 418, 424" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef3}>
+                <div className="filial">
                   427, 428, 429, 431, 433, 434, 435, 436{" "}
                 </div>
-                <button onClick={copyToClipboard3}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="427, 428, 429, 431, 433, 434, 435, 436" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef4}>
+                <div className="filial">
                   437, 439, 446, 447, 450, 451, 452, 453, 454, 459
                 </div>
-                <button onClick={copyToClipboard4}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="437, 439, 446, 447, 450, 451, 452, 453, 454, 459" />
               </div>
             </ul>
 
@@ -320,35 +285,33 @@ export function Home() {
               <li>{obterDataAtual()}</li>
               <li>{obterDataAtual()}</li>
               <li>{obterDataAtual()}</li>
-           
             </ul>
 
             <ul className="checkbox_content">
               <div className="checkbox-wrapper-47">
-                <input type="checkbox" name="cb" id="cb-1" />
-                <label htmlFor="cb-1">Congelada</label>
+                <input type="checkbox" name="cb" id="cb-12" />
+                <label htmlFor="cb-12">Congelada</label>
               </div>
 
               <div className="checkbox-wrapper-47">
-                <input type="checkbox" name="cb" id="cb-2" />
-                <label htmlFor="cb-2">Congelada</label>
+                <input type="checkbox" name="cb" id="cb-13" />
+                <label htmlFor="cb-13">Congelada</label>
               </div>
 
               <div className="checkbox-wrapper-47">
-                <input type="checkbox" name="cb" id="cb-3" />
-                <label htmlFor="cb-3">Congelada</label>
+                <input type="checkbox" name="cb" id="cb-14" />
+                <label htmlFor="cb-14">Congelada</label>
               </div>
 
               <div className="checkbox-wrapper-47">
-                <input type="checkbox" name="cb" id="cb-4" />
-                <label htmlFor="cb-4">Congelada</label>
+                <input type="checkbox" name="cb" id="cb-15" />
+                <label htmlFor="cb-15">Congelada</label>
               </div>
 
               <div className="checkbox-wrapper-47">
-                <input type="checkbox" name="cb" id="cb-5" />
-                <label htmlFor="cb-5">Congelada</label>
+                <input type="checkbox" name="cb" id="cb-16" />
+                <label htmlFor="cb-16">Congelada</label>
               </div>
-
             </ul>
           </div>
         </main>
@@ -378,21 +341,17 @@ export function Home() {
             <ul>
 
               <div>
-                <div className="filial" ref={divRef}>
+                <div className="filial" >
                   301, 414, 423, 425, 432, 438, 445
                 </div>
-                <button onClick={copyToClipboard1}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="301, 414, 423, 425, 432, 438, 445" />
               </div>
 
               <div>
-                <div className="filial" ref={divRef2}>
+                <div className="filial" >
                 457, 458, 461, 463, 464, 467
                 </div>
-                <button onClick={copyToClipboard2}>
-                  <IoMdCopy />
-                </button>
+                <CopyToClipboardButton content="457, 458, 461, 463, 464, 467" />
               </div>
             </ul>
 
@@ -404,13 +363,13 @@ export function Home() {
 
             <ul className="checkbox_content">
               <div className="checkbox-wrapper-47">
-                <input type="checkbox" name="cb" id="cb-4" />
-                <label htmlFor="cb-4">Congelada</label>
+                <input type="checkbox" name="cb" id="cb-17" />
+                <label htmlFor="cb-17">Congelada</label>
               </div>
 
               <div className="checkbox-wrapper-47">
-                <input type="checkbox" name="cb" id="cb-5" />
-                <label htmlFor="cb-5">Congelada</label>
+                <input type="checkbox" name="cb" id="cb-18" />
+                <label htmlFor="cb-18">Congelada</label>
               </div>
 
             </ul>
@@ -419,8 +378,7 @@ export function Home() {
           <p style={{ color: "yellow", marginTop: "20px" }}>
             TODOS OS DIAS FAZER A CONFIG DOS ELETROS APOS OS PROCESSOS.
           </p>
-        </main> */}
-
+        </main>
       </div>
     </div>
   );
@@ -428,15 +386,18 @@ export function Home() {
 
 const CopyToClipboardButton: React.FC<{ content: string }> = ({ content }) => {
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(content)
-      .then(() => alert('Conteúdo copiado para a área de transferência'))
-      .catch((error) => console.error('Erro ao copiar para a área de transferência: ', error));
+    navigator.clipboard
+      .writeText(content)
+      .then(() => alert("Conteúdo copiado para a área de transferência"))
+      .catch((error) =>
+        console.error("Erro ao copiar para a área de transferência: ", error)
+      );
   };
 
   return (
-      <button onClick={copyToClipboard}>
-        <IoMdCopy />
-      </button>
+    <button onClick={copyToClipboard}>
+      <IoMdCopy />
+    </button>
   );
 };
 

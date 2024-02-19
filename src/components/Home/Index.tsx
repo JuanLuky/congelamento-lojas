@@ -212,7 +212,7 @@ export function Home() {
           </p>
         </main>
 
-        <main className="lojas20_00">
+        <main className="lojas20_00 camino">
           <nav>
             <h1 className="title">
               CAMINO E CARONE{" "}
@@ -316,7 +316,7 @@ export function Home() {
           </div>
         </main>
 
-        <main className="lojas21_00">
+        <main className="lojas21_00 camino">
           <nav>
             <h1 className="title">
             CAMINO E CARONE{" "}

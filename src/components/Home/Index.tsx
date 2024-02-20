@@ -16,7 +16,7 @@ export function Home() {
     <div className="Container">
       <Header />
       <div>
-        <main>
+        <main className="lojas_eletro">
           <nav>
             <h1 className="title">
               LOJAS AS{" "}
@@ -129,8 +129,7 @@ export function Home() {
                   635, 636
                 </div>
                 <CopyToClipboardButton
-                  content="618, 621, 622, 623, 624, 625, 626, 627, 631, 632, 633, 634,
-                  635, 636"
+                  content="618, 621, 622, 623, 624, 625, 626, 627, 631, 632, 633, 634, 635, 636"
                 />
               </div>
             </ul>
